@@ -13,12 +13,13 @@ def monthString(monthNum):
      
      monthString = ""
 
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ### Other than your name above, ###
-     ### this is the only section    ###
-     ### you change in this program. ###
-     ###################################
+   #validate input for number between 1 and 12 only and keep looping for wrong input
+    while monthNum not in range(1,13):
+        print("\nThis is not a valid month. Please enter a number between 1 and 12: ")
+        monthNum=int(input())
+    
+    #list containing all the months
+    ls=["January","Febuary","March","April","May","June","July","August","September","October","November","December"]
 
      return(monthString)
 
